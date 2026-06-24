@@ -810,6 +810,10 @@
             <div class="c-icon">📍</div>
             <div><div class="c-lbl">Location</div><div class="c-val">Chennai, Tamil Nadu</div></div>
           </div>
+          <a href="https://instagram.com/speedfit_2.0" target="_blank" class="c-method">
+            <div class="c-icon">📸</div>
+            <div><div class="c-lbl">Instagram</div><div class="c-val">@speedfit_2.0</div></div>
+          </a>
         </div>
       </div>
       <div class="enquiry-card fi">
@@ -867,7 +871,10 @@
     </div>
     <div class="footer-bottom">
       <p>© 2025 Speed Fit · Coach Thousief Khan · Chennai</p>
-      <p>Built for real transformations 💪</p>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <a href="https://instagram.com/speedfit_2.0" target="_blank" style="display:flex;align-items:center;gap:8px;font-size:10px;color:var(--slate);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s;" onmouseover="this.style.color='#e60000'" onmouseout="this.style.color='var(--slate)'">📸 @speedfit_2.0</a>
+        <p>Built for real transformations 💪</p>
+      </div>
     </div>
   </div>
 </footer>
@@ -914,7 +921,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Ticker
-const items = ['🔥 FAT LOSS PROTOCOL','⚡ CHENNAI OFFLINE COACHING','🌟 MR INDIA ATHLETIC STANDARDS','🥗 INDIAN MEAL PLANS','🏆 WEEKLY WHATSAPP CHECK-INS','💪 100+ CLIENTS TRANSFORMED','🦴 POSTURE CORRECTION SPECIALIST','📲 DAILY ACCOUNTABILITY'];
+const items = ['🔥 FAT LOSS PROTOCOL','⚡ CHENNAI OFFLINE COACHING','🌟 MR INDIA ATHLETIC STANDARDS','🥗 INDIAN MEAL PLANS','🏆 WEEKLY WHATSAPP CHECK-INS','💪 100+ CLIENTS TRANSFORMED','🦴 POSTURE CORRECTION SPECIALIST','📲 DAILY ACCOUNTABILITY','📸 FOLLOW @SPEEDFIT_2.0 ON INSTAGRAM'];
 const t = document.getElementById('ticker');
 t.innerHTML = [...items,...items].map(x => `<span><span class="dot"></span>${x}</span>`).join('');
 
