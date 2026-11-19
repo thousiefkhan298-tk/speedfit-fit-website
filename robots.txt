@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+
+Sitemap: https://www.thespeedfit.com/sitemap.xml
+
+
+User-agent: AhrefsBot
+Disallow: /
+
+
+User-agent: MJ12bot
+Disallow: /
