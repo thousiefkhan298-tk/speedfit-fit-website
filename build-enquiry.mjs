@@ -11,7 +11,7 @@ for(const [from,to] of edits){if(home.split(from).length!==2)throw new Error('Ex
 return home;
 }
 async function build(){
-const home=addEnquiryLinks(await readFile('index.html','utf8'));
+const home=addEnquiryLinks(await readFile('index.html','utf8')).replace('<head>', '<head>\n<meta name="google-site-verification" content="lIFTsmSSdM-NWTrGU37ONtsRRUns_ekniUn8GPPekSc" />');
 const assets=['blog','llms.txt','robots.txt','sitemap.xml','women-poster.jpg','women-video.mp4'];
 await mkdir('dist/enquiry',{recursive:true});
 for(const asset of assets){await stat(asset);await cp(asset,'dist/'+asset,{recursive:true});}
